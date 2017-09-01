@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>543</width>
-    <height>407</height>
+    <width>530</width>
+    <height>382</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -160,10 +160,28 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>543</width>
+     <width>530</width>
      <height>18</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionSave_Config"/>
+    <addaction name="actionLoad_Config"/>
+    <addaction name="actionSet_Miner_Path"/>
+   </widget>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>About</string>
+    </property>
+    <addaction name="actionAbout_Qt"/>
+    <addaction name="actionAbout_simpleMiner"/>
+    <addaction name="actionAbout_ccminer"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuAbout"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">
@@ -174,6 +192,36 @@
    </attribute>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionSave_Config">
+   <property name="text">
+    <string>Save Config</string>
+   </property>
+  </action>
+  <action name="actionLoad_Config">
+   <property name="text">
+    <string>Load Config</string>
+   </property>
+  </action>
+  <action name="actionAbout_Qt">
+   <property name="text">
+    <string>About Qt</string>
+   </property>
+  </action>
+  <action name="actionAbout_simpleMiner">
+   <property name="text">
+    <string>About simpleMiner</string>
+   </property>
+  </action>
+  <action name="actionAbout_ccminer">
+   <property name="text">
+    <string>About ccMiner</string>
+   </property>
+  </action>
+  <action name="actionSet_Miner_Path">
+   <property name="text">
+    <string>Set ccMiner Path</string>
+   </property>
+  </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>
